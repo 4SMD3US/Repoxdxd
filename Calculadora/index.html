@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculadora</title>
+
+  <!-- W3.CSS -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="w3-display-middle calc-wrapper">
+
+    <div class="w3-card-4 calc-container">
+
+      <!-- Pantalla -->
+      <div class="w3-container display-area">
+        <div id="expression" class="expression-text">0</div>
+        <div id="result" class="result-text"></div>
+      </div>
+
+      <!-- Botones -->
+      <div class="w3-container buttons-grid">
+
+        <!-- Fila 1 -->
+        <button class="w3-button btn btn-clear w3-col s3" data-action="clear">AC</button>
+        <button class="w3-button btn btn-op w3-col s3"   data-action="sign">+/−</button>
+        <button class="w3-button btn btn-op w3-col s3"   data-action="percent">%</button>
+        <button class="w3-button btn btn-operator w3-col s3" data-value="/">÷</button>
+
+        <!-- Fila 2 -->
+        <button class="w3-button btn btn-num w3-col s3" data-value="7">7</button>
+        <button class="w3-button btn btn-num w3-col s3" data-value="8">8</button>
+        <button class="w3-button btn btn-num w3-col s3" data-value="9">9</button>
+        <button class="w3-button btn btn-operator w3-col s3" data-value="*">×</button>
+
+        <!-- Fila 3 -->
+        <button class="w3-button btn btn-num w3-col s3" data-value="4">4</button>
+        <button class="w3-button btn btn-num w3-col s3" data-value="5">5</button>
+        <button class="w3-button btn btn-num w3-col s3" data-value="6">6</button>
+        <button class="w3-button btn btn-operator w3-col s3" data-value="-">−</button>
+
+        <!-- Fila 4 -->
+        <button class="w3-button btn btn-num w3-col s3" data-value="1">1</button>
+        <button class="w3-button btn btn-num w3-col s3" data-value="2">2</button>
+        <button class="w3-button btn btn-num w3-col s3" data-value="3">3</button>
+        <button class="w3-button btn btn-operator w3-col s3" data-value="+">+</button>
+
+        <!-- Fila 5 -->
+        <button class="w3-button btn btn-num btn-zero w3-col s6" data-value="0">0</button>
+        <button class="w3-button btn btn-num w3-col s3" data-value=".">.</button>
+        <button class="w3-button btn btn-equals w3-col s3" data-action="equals">=</button>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Lógica -->
+  <script src="script.js"></script>
+</body>
+</html>
